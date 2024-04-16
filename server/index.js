@@ -2,7 +2,7 @@ const express = require('express');
 const axios = require('axios');
 const cors = require('cors')
 const app = express();
-const port = 8000; // Choose the port you want to run the server on
+const port = 8000; 
 app.use(cors({
     origin: '*'
 }))
