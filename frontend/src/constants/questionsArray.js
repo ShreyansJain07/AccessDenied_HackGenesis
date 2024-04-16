@@ -13,6 +13,8 @@ let questionsArray = [
 
     
     {
+
+        
       question: "Phone number",
       resumeField: "Phone Number",
       resumeFieldId: "phoneNumber",
