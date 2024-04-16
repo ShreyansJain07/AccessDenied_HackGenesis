@@ -2,6 +2,7 @@ let questionsArray = [
     {
       question: "What is your name?",
       resumeField: "Name",
+        
       resumeFieldId: "name",
     },
     {
