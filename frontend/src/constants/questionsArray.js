@@ -14,6 +14,7 @@ let questionsArray = [
       question: "Phone number",
       resumeField: "Phone Number",
       resumeFieldId: "phoneNumber",
+        
     },
     {
       question: "Enter your address",
