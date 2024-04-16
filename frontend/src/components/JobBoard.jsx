@@ -11,7 +11,7 @@ import {
   Spacer,
   useBreakpointValue
 } from "@chakra-ui/react";
-import { Search2Icon } from '@chakra-ui/icons'; // Import search icon from Chakra UI
+import { Search2Icon } from '@chakra-ui/icons';
 
 
 const BookDetails = ({ title, author, coverImage, description, price, delivery, link }) => {
