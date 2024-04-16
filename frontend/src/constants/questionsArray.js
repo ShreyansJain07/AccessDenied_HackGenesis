@@ -26,6 +26,7 @@ let questionsArray = [
     {
       question: "What is your career objective",
       resumeField: "Career Objective",
+        
       resumeFieldId: "objective",
     },
     {
