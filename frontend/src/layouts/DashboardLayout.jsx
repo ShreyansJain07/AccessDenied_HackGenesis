@@ -6,8 +6,7 @@ import {
   Flex,
   HStack,
   VStack,
-  Icon,
-  // useColorModeValue,
+  Icon,  
   Text,
   Drawer,
   DrawerContent,
@@ -69,9 +68,7 @@ const SidebarContent = ({ onClose, ...rest }) => {
   return (
     <Box
       transition="3s ease"
-      // bg={useColorModeValue("green.300", "green.900")}
       borderRight="1px"
-      // borderRightColor={useColorModeValue("gray.200", "gray.700")}
       w={{ base: "full", md: 60 }}
       pos="fixed"
       h="full"
@@ -158,8 +155,6 @@ const NavItem = ({ icon, children, ...rest }) => {
 const MobileNav = ({ onOpen, ...rest }) => {
   const toast = useToast();
   const navigate = useNavigate();
-  // const user = JSON.parse(localStorage.getItem("user"));
-  // console.log(user)
   let user = useContext(UserContext).user;
   console.log("user", user);
 
@@ -169,7 +164,7 @@ const MobileNav = ({ onOpen, ...rest }) => {
       description: { message },
       status: { status }, // success, error, warning, info
       duration: 3000, // Display duration in milliseconds
-      isClosable: true, // Whether the toast is closable by the user
+      isClosable: true, 
     });
   };
 
@@ -179,9 +174,7 @@ const MobileNav = ({ onOpen, ...rest }) => {
       px={{ base: 4, md: 4 }}
       height="20"
       alignItems="center"
-      // bg={useColorModeValue("green.300", "green.900")}
       borderBottomWidth="1px"
-      // borderBottomColor={useColorModeValue("gray.200", "gray.700")}
       justifyContent={{ base: "space-between", md: "flex-end" }}
       {...rest}
     >
@@ -279,7 +272,6 @@ const SidebarWithHeader = () => {
   return (
     <Box
       minH="100vh"
-      //   bg={useColorModeValue("gray.100", "gray.900")}
     >
       <SidebarContent
         onClose={() => onClose}
@@ -303,8 +295,6 @@ const SidebarWithHeader = () => {
         <Outlet />
       </Box>
     </Box>
-    //   ) : (
-    //     <Navigate to="/signup" replace />
   );
 };
 
