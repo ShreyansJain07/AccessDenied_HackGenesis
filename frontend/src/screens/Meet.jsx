@@ -5,7 +5,7 @@ export default function Meet() {
   return (
 <JitsiMeeting
     // domain = { YOUR_DOMAIN }
-    roomName = "PleaseUseAGoodRoomName"
+    roomName = "PleaseUseAGoodRoomName" 
     configOverwrite = {{
         startWithAudioMuted: true,
         // disableModeratorIndicator: true,
