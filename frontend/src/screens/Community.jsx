@@ -1,20 +1,8 @@
 import React, { useState } from "react";
 import {
-  Select,
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Button,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
-  FormLabel,
-  Input,
+  Select,Card,CardHeader,CardBody,CardFooter,Button,
+  Modal,ModalOverlay,ModalContent,ModalHeader,ModalFooter,
+  ModalBody,ModalCloseButton,FormLabel,Input,
   useDisclosure,
 } from "@chakra-ui/react";
 import { TbMessages } from "react-icons/tb";
@@ -24,6 +12,8 @@ import { IoCameraOutline } from "react-icons/io5";
 import ChatCard from "./ChatCard";
 
 const Community = () => {
+
+  // ALL COMMUNITIES
   const [Groups, setGroups] = useState([
     {
       name: "Business Leaders Club",
@@ -31,6 +21,8 @@ const Community = () => {
       posts: 150,
       messages: 850,
       forums: ["#BusinessNetworking", "#CareerAdvice"],
+
+
     },
     {
       name: "Financial Analysts Association",
@@ -38,6 +30,8 @@ const Community = () => {
       posts: 120,
       messages: 720,
       forums: ["#AccountingAnalytics", "#FinanceCareers"],
+
+
     },
     {
       name: "Legal Studies Society",
@@ -46,6 +40,9 @@ const Community = () => {
       posts: 90,
       messages: 600,
       forums: ["#LegalInsights", "#LawStudents"],
+
+
+
     },
     {
       name: "Code Creators Alliance",
@@ -53,6 +50,8 @@ const Community = () => {
       posts: 80,
       messages: 550,
       forums: ["#TechTips", "#CodeConnections"],
+
+
     },
     {
       name: "Digital Designers ",
@@ -67,6 +66,9 @@ const Community = () => {
       posts: 110,
       messages: 720,
       forums: ["#HistoricalResearch", "#ArchaeologyExplorations"],
+
+
+
     },
     {
       name: "Medical Minds Society",
@@ -74,6 +76,8 @@ const Community = () => {
       posts: 70,
       messages: 500,
       forums: ["#MedStudentSupport", "#MedStudentNetwork"],
+
+
     },
     {
       name: "Architectural Planning Association",
@@ -81,6 +85,8 @@ const Community = () => {
       posts: 95,
       messages: 600,
       forums: ["#AccessibleDesigns", "#ArchitectureDrawing"],
+
+
     },
     {
       name: "Journalist Network",
@@ -88,6 +94,8 @@ const Community = () => {
       posts: 120,
       messages: 800,
       forums: ["#JournalismTips", "#PressUpdates"],
+
+
     },
   ]);
 
@@ -105,6 +113,8 @@ const Community = () => {
       hashtag: "#Project456",
       camera: "Online",
       time: "18 January 2024 at 11:30 AM",
+
+
     },
     {
       meetingName: "Presentation Preparation Session",
@@ -112,6 +122,9 @@ const Community = () => {
       hashtag: "#Student789",
       camera: "Online",
       time: "18 January 2024 at 02:00 PM",
+
+
+
     },
     {
       meetingName: "Design Brainstorming",
@@ -119,6 +132,8 @@ const Community = () => {
       hashtag: "#Design789",
       camera: "Online",
       time: "18 January 2024 at 03:45 PM",
+
+
     },
   ]);
 
@@ -127,6 +142,8 @@ const Community = () => {
     isOpen: isMeetModalOpen,
     onOpen: onMeetModalOpen,
     onClose: onMeetModalClose,
+
+
   } = useDisclosure();
   const {
     isOpen: isChatModalOpen,
@@ -140,6 +157,9 @@ const Community = () => {
     hashtag: "",
     camera: "",
     time: "",
+
+
+
   });
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -160,6 +180,9 @@ const Community = () => {
     setMeetings((prevMeetings) => [...prevMeetings, newMeeting]);
 
     // Reset the newMeeting state for the next input
+
+
+
     setNewMeeting({
       meetingName: "",
       userName: "",
@@ -171,12 +194,16 @@ const Community = () => {
   };
 
   // Chat modal
+
+
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   return (
     <div style={{ padding: "2rem", backgroundColor: "#f3f4f6" }}>
+
+
       {/* <div>Caraousel</div> */}
       {/* <ChatCard /> */}
       <div
@@ -193,6 +220,9 @@ const Community = () => {
               <div style={{ fontSize: "1.5rem", fontWeight: 625 }}>
                 Categories
               </div>
+
+
+
               {/* <Select
                 placeholder="Sort By"
                 variant="flushed"
@@ -225,7 +255,6 @@ const Community = () => {
                       cursor: "pointer",
                     }}
                     onClick={onChatModalOpen}
-                    // onClick={() => alert("Hi")}
                   >
                     <div
                       style={{
@@ -346,8 +375,8 @@ const Community = () => {
                           gap: "1rem",
                         }}
                       >
-                        <div>
-                          <div style={{ fontWeight: 650 }}>{group.posts}</div>
+
+                        <div>  <div style={{ fontWeight: 650 }}>{group.posts}</div>
                           <div style={{ fontWeight: 500 }}>POSTS</div>
                         </div>
                         <div>
@@ -355,8 +384,7 @@ const Community = () => {
                             {group.messages}
                           </div>
                           <div style={{ fontWeight: 500 }}>MESSAGES</div>
-                        </div>
-                      </div>
+                        </div>  </div>
                     </CardBody>
                   </Card>
                 );
@@ -526,14 +554,10 @@ const Community = () => {
           </ModalBody>
           <ModalFooter>
             <Button
-              style={{
-                backgroundColor: "#ff5045",
-                color: "white",
-                margin: "auto",
+              style={{    backgroundColor: "#ff5045", color: "white", margin: "auto",
               }}
               onClick={handleAddMeeting}
-            >
-              Add
+            >     Add
             </Button>
           </ModalFooter>
         </ModalContent>
@@ -547,8 +571,5 @@ const Community = () => {
           </ModalBody>
         </ModalContent>
       </Modal>
-    </div>
-  );
-};
-
+    </div>);};
 export default Community;
