@@ -119,7 +119,7 @@ What kind of support can I expect from my mentor?            <span
           </p>
         </div>
         <span className="dots" style={{ color: "#ffffffd" }}>
-          ....................................................................................................................................................
+          ...................................................................................................................................................
         </span>
 
         <div
@@ -151,11 +151,11 @@ How often should I communicate with my mentor?            <span
               transition: "opacity 0.3s ease-in-out, height 0.3s ease-in-out",
             }}
           >
-      The frequency of communication with your mentor depends on your goals and availability. Some mentees prefer regular check-ins, while others opt for periodic meetings based on their schedules. It's essential to establish clear communication expectations and maintain open dialogue to maximize the mentorship experience.
+      The frequency of communication with your mentor depends on your goals and availability. Some mentees prefer regular check-ins, while others opt for periodic meetings based on their schedules. It's essential to establish clear communication expectations and maintain open dialogue to maximize the mentorship experience. 
           </p>
         </div>
         <span className="dots" style={{ color: "#ffffffd" }}>
-          ....................................................................................................................................................
+          .................................................................................................................................................... 
         </span>
 
         <div
@@ -167,7 +167,7 @@ How often should I communicate with my mentor?            <span
               Setclick4(!click4);
             }}
           >
-What if I'm not satisfied with my mentor?            <span
+What if I'm  not satisfied with my mentor?            <span
               style={{
                 fontWeight: "bolder",
                 fontSize: "4.5vh",
@@ -187,7 +187,7 @@ What if I'm not satisfied with my mentor?            <span
               transition: "opacity 0.3s ease-in-out, height 0.3s ease-in-out",
             }}
           >
-      If you're not satisfied with your mentorship experience, you have the flexibility to request a new mentor or explore other options available on our platform. We prioritize your satisfaction and strive to ensure that you receive the support and guidance you need to achieve your goals.
+      If you're not satisfied with your mentorship experience, you have the flexibility to request a new mentor or explore other options available on our platform. We prioritize  your satisfaction and strive to ensure that you receive the support and guidance you need to achieve your goals.
           </p>
         </div>
         

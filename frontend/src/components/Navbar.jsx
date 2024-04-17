@@ -11,7 +11,6 @@ import {
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
-  useBreakpointValue,
   useDisclosure,
   Spacer,
 } from "@chakra-ui/react";
@@ -23,7 +22,7 @@ import {
 } from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
 import { UserContext } from "../App";
-import React, { useState, useContext } from "react";
+import React, {useContext } from "react";
 
 function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
