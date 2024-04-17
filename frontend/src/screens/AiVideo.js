@@ -80,7 +80,6 @@ const AiVideo = () => {
         </div>
         <YoutubeSearch title={selected.title} />
       </div>
-      {/* <div className="aivideo-ques"></div> */}
     </div>
   );
 };
