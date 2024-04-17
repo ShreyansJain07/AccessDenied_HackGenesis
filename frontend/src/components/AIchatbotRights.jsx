@@ -32,6 +32,7 @@ const AIchatbotRights = () => {
       console.error("Error fetching data:", error);
     }
   };
+  //chnaged
   return (
     <div style={{ minHeight: "60vh", marginTop: "1.3rem" }}>
       <div
