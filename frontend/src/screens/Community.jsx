@@ -22,7 +22,6 @@ import { IoPersonOutline } from "react-icons/io5";
 import { LuClock4 } from "react-icons/lu";
 import { IoCameraOutline } from "react-icons/io5";
 import ChatCard from "./ChatCard";
-// import Modal2 from "@mui/material/Modal";
 
 const Community = () => {
   const [Groups, setGroups] = useState([
