@@ -84,7 +84,7 @@ const AiCourse = () => {
           <div className="aicourse-info">
             Enter in a course title, or what you want to learn about. Then enter
             a list of units, which are the specifics you want to learn. and our
-            AI will generate a course for you!
+            AI will generate a course for you! [eg. Title:Calculus Unit1:-Integraton Unit2:-Differentiation]
           </div>
           <div className="aicourse-inputarea">
             <div className="aicourse-input-title">Title</div>
