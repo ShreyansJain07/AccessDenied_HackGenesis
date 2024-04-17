@@ -1,18 +1,10 @@
 import {
-  Box,
-  Heading,
-  Image,
-  Text,
-  Divider,
-  HStack,
-  Tag,
-  Wrap,
-  WrapItem,
-  SpaceProps,
-  useColorModeValue,
-  Container,
-  VStack,
+  Box, Heading,Image, Text,
+  Divider,HStack,Tag,
+  Wrap,WrapItem,SpaceProps,
+  useColorModeValue,Container,VStack,
 } from '@chakra-ui/react'
+
 
 
 const BlogTags = (props) => {
@@ -31,6 +23,7 @@ const BlogTags = (props) => {
   )
 }
 
+
 const BlogAuthor = (props) => {
   return (
     <HStack marginTop="2" spacing="2" display="flex" alignItems="center">
@@ -46,6 +39,7 @@ const BlogAuthor = (props) => {
     </HStack>
   )
 }
+
 
 const ArticleList = () => {
   return (
@@ -68,6 +62,7 @@ const ArticleList = () => {
             marginLeft={{ base: '0', sm: '5%' }}
             marginTop="5%">
             <Box textDecoration="none" _hover={{ textDecoration: 'none' }}>
+
               <Image
                 borderRadius="lg"
                 src={
@@ -76,7 +71,9 @@ const ArticleList = () => {
                 alt="some good alt text"
                 objectFit="contain"
               />
+
             </Box>
+
           </Box>
           <Box zIndex="1" width="100%" position="absolute" height="100%">
             <Box
@@ -102,6 +99,7 @@ const ArticleList = () => {
               Blog article title
             </Text>
           </Heading>
+
           <Text
             as="p"
             marginTop="2"
@@ -112,18 +110,23 @@ const ArticleList = () => {
             1500s, when an unknown printer took a galley of type and scrambled it to make
             a type specimen book.
           </Text>
+
           <BlogAuthor name="John Doe" date={new Date('2021-04-06T19:01:27Z')} />
+
         </Box>
       </Box>
+
       <Heading as="h2" marginTop="5">
         Latest articles
       </Heading>
+
       <Divider marginTop="5" />
       <Wrap spacing="30px" marginTop="5">
         <WrapItem width={{ base: '100%', sm: '45%', md: '45%', lg: '30%' }}>
           <Box w="100%">
             <Box borderRadius="lg" overflow="hidden">
               <Box textDecoration="none" _hover={{ textDecoration: 'none' }}>
+
                 <Image
                   transform="scale(1.0)"
                   src={
@@ -134,10 +137,10 @@ const ArticleList = () => {
                   width="100%"
                   transition="0.3s ease-in-out"
                   _hover={{
-                    transform: 'scale(1.05)',
-                  }}
+                    transform: 'scale(1.05)',       }}
                 />
               </Box>
+        
             </Box>
             <BlogTags tags={['Engineering', 'Product']} marginTop={3} />
             <Heading fontSize="xl" marginTop="2">
@@ -153,6 +156,7 @@ const ArticleList = () => {
             </Text>
             <BlogAuthor name="John Doe" date={new Date('2021-04-06T19:01:27Z')} />
           </Box>
+        
         </WrapItem>
         <WrapItem width={{ base: '100%', sm: '45%', md: '45%', lg: '30%' }}>
         <Box w="100%">
@@ -168,10 +172,10 @@ const ArticleList = () => {
                   width="100%"
                   transition="0.3s ease-in-out"
                   _hover={{
-                    transform: 'scale(1.05)',
-                  }}
+                    transform: 'scale(1.05)',   }}
                 />
               </Box>
+           
             </Box>
             <BlogTags tags={['Engineering', 'Product']} marginTop={3} />
             <Heading fontSize="xl" marginTop="2">
