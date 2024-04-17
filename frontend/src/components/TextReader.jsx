@@ -52,7 +52,6 @@ const TextReader = ({  isEnabled = true,children }) => {
 
   return (
     <Box
-      onMouseUp={isEnabled ? handleSelection : null}
       onClick={isEnabled ? handleWordFocus : null}
       onKeyDown={isEnabled ? handleKeyboardNavigation : null}
       tabIndex="0" // Make the component focusable
