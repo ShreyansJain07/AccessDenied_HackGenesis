@@ -25,7 +25,7 @@ async function getFirstPage(query) {
         links.push(actualUrl);
       }
     });
-    // get all h3 tags
+
     const h3Tags = $("h3");
     h3Tags.each((i, h3Tag) => {
       const text = $(h3Tag).text().trim();
