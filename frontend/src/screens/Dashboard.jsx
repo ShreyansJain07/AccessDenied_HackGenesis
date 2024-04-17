@@ -390,7 +390,6 @@ const Dashboard = () => {
         >
           <div
             style={{
-              // marginTop: "1rem",
               fontWeight: 725,
             }}
           >
