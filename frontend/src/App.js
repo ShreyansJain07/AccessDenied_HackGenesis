@@ -57,7 +57,7 @@ function App() {
           if (userDocSnapshot.exists()) {
             setUser(userDocSnapshot.data());
           } else {
-            console.error("User data not found in Firestore");
+            console.error("User data is not found in Firestore");
           }
         } catch (error) {
           console.error("Error fetching user data:", error);

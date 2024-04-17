@@ -1,6 +1,5 @@
 import { app } from "./Firebase";
 import { getFirestore, doc, setDoc } from "firebase/firestore";
-import Resume from "./components/Resume";
 
 export const firestore = getFirestore(app);
 
